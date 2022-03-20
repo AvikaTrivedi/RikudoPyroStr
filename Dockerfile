@@ -3,5 +3,5 @@ RUN apt-get update -y && apt-get upgrade -y
 RUN apt-get install python3-pip -y
 RUN git clone https://github.com/AvikaTrivedi/RikudoPyroStr
 RUN cd RikudoPyroStr
-RUN python3 -m pip install --no-cache-dir -r req*
+RUN python3 -m pip install --no-cache-dir pyrogram pyromod TgCrypto heroku3
 RUN python3 bot.py
